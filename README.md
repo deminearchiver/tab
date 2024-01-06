@@ -1,28 +1,43 @@
-## Usage
+<a href="https://solidjs.com">
+  <img height="56" src=".github/images/badges/built-with-solidjs/cozy_vector.svg">
+</a>
 
+# tab
+A modern new tab extension
+
+## Install
+1. Download the extension from:
+- [**Latest release**](https://github.com/deminearchiver/tab/releases/latest) (recommended)
+- [**Latest GitHub Actions run**](https://github.com/deminearchiver/tab/actions) (development build)
+2. Unzip the downloaded archive
+3. In your browser (Chrome / Firefox) enable developer mode, go to the extensions page and load the unpacked extension
+
+## Features
+TODO:
+- [ ] Quick links
+  - Add / remove quick links
+  - Custom icons
+- [ ] Add configuration screen
+  - Allow adding / removing quick links
+- [x] Background
+- [ ] Quotes
+  - [x] Developer excuses
+
+## Building from source
+This project uses [**Yarn** package manager](https://yarnpkg.com).
+
+1. Clone this repository
 ```bash
-$ npm install # or pnpm install or yarn install
+git clone https://github.com/deminearchiver/tab.git
+```
+2. Install dependencies
+```bash
+yarn
+```
+3. Launch the dev server (powered by Vite)
+```bash
+yarn dev
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vitejs.dev/guide/static-deploy.html)
+## License
+This project is licensed under the [**MIT License**](LICENSE).
