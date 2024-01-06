@@ -7,6 +7,12 @@ import { Portal } from "solid-js/web";
 import { Drag } from "./components/drag/Drag";
 import { getDeveloperExcuse } from "./api/quotes";
 
+const getFaviconUrl = (pageUrl: string): string => {
+  const url = new URL(chrome.runtime.getURL("/_favicon/"));
+  url.searchParams.set("pageUrl", pageUrl);
+  url.searchParams.set("size", "32");
+  return url.toString();
+};
 
 const test = [
   "https://youtube.com",
@@ -87,7 +93,8 @@ const App: Component = () => {
                   title={item.hostname}>
                   <img
                     class={styles["icon"]}
-                    src={`https://icon.horse/icon/${item.hostname}`} />
+                    // src={`https://icon.horse/icon/${item.hostname}`} />
+                    src={`${getFaviconUrl(item.toString())}`} />
                 </a>
               </li>
             }

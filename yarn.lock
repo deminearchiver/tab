@@ -775,6 +775,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/chrome@npm:^0.0.256":
+  version: 0.0.256
+  resolution: "@types/chrome@npm:0.0.256"
+  dependencies:
+    "@types/filesystem": "npm:*"
+    "@types/har-format": "npm:*"
+  checksum: 35b3d2c92a3888cc14e5961421233003407a95078bf9b2f30c52a90470dae02588560bff1733ed3e7a8e9f12a1d0c5a6bae0ca30b6acdb3d723e1c2f29c8e861
+  languageName: node
+  linkType: hard
+
+"@types/filesystem@npm:*":
+  version: 0.0.35
+  resolution: "@types/filesystem@npm:0.0.35"
+  dependencies:
+    "@types/filewriter": "npm:*"
+  checksum: 16a380e9774c5a9e1358f3ee28a3d85a93488443f235d160da3969aae7858dc6c6148cb3ff6b7e814f1c43f17940da0941f004373566d4fe7f75d9fda5efe246
+  languageName: node
+  linkType: hard
+
+"@types/filewriter@npm:*":
+  version: 0.0.32
+  resolution: "@types/filewriter@npm:0.0.32"
+  checksum: 4feea7890d7945059f8eec0f89b1a4fe4f0522156c9345d9123c3498c6dba4584a17bd886daa4392a2e19bd9d16ee82aff9a0e1b837af507b612bcc6bd4c4305
+  languageName: node
+  linkType: hard
+
+"@types/har-format@npm:*":
+  version: 1.2.15
+  resolution: "@types/har-format@npm:1.2.15"
+  checksum: 43ede55c3947e5cf59561f165930dc2eb3ae983fd162980cdc7274be1e7f528a6f77e65fee9a02a20d91b09bde10bed832b0470724f5c744ef6669015d00564e
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -938,13 +971,6 @@ __metadata:
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
   checksum: 594754e1303672171cc04e50f6c398ae16128eb134a88f801bf5354fd96f205320f23536a045d9abd8b51024a149696e51231565891d4efdab8846021ecf88e6
-  languageName: node
-  linkType: hard
-
-"chrome-types@npm:^0.1.247":
-  version: 0.1.247
-  resolution: "chrome-types@npm:0.1.247"
-  checksum: 0823ced7b52c6ce825b15d1699d2ac1b67eaa185ec0a0e82b9a2c50c9acf8eb875b9d4c9c9d8c4c0392858eb1ec4a6e48e45d54cce1ad87808a7fbbebfeef74a
   languageName: node
   linkType: hard
 
@@ -1918,7 +1944,7 @@ __metadata:
   resolution: "tab@workspace:."
   dependencies:
     "@solid-primitives/timer": "npm:^1.3.7"
-    chrome-types: "npm:^0.1.247"
+    "@types/chrome": "npm:^0.0.256"
     solid-js: "npm:^1.8.7"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.0.10"
