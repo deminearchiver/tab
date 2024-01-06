@@ -1,4 +1,4 @@
-import { Component, For, Ref, Suspense, createEffect, createResource, createSignal, onMount } from "solid-js";
+import { Component, For, Ref, Show, Suspense, createEffect, createResource, createSignal, onMount, useTransition } from "solid-js";
 
 import styles from "./App.module.css";
 import { makeTimer } from "@solid-primitives/timer";
@@ -6,12 +6,21 @@ import Clock from "./components/clock/Clock";
 import { Portal } from "solid-js/web";
 import { Drag } from "./components/drag/Drag";
 import { getDeveloperExcuse } from "./api/quotes";
+import MaterialSymbol from "./components/MaterialSymbol";
+import { createPresence } from "@solid-primitives/presence";
 
 const getFaviconUrl = (pageUrl: string): string => {
-  const url = new URL(chrome.runtime.getURL("/_favicon/"));
-  url.searchParams.set("pageUrl", pageUrl);
-  url.searchParams.set("size", "32");
-  return url.toString();
+  try {
+    const url = new URL(chrome.runtime.getURL("/_favicon/"));
+    url.searchParams.set("pageUrl", pageUrl);
+    url.searchParams.set("size", "32");
+    return url.toString();
+  } catch(error) {
+    const url = new URL("https://icon.horse/icon/");
+    url.searchParams.set("uri", pageUrl);
+    // url.searchParams.set("size", "32");
+    return url.toString();
+  }
 };
 
 const test = [
@@ -30,6 +39,7 @@ const test = [
 // TODO: C:\Windows\Web\Wallpaper\Glow
 
 const App: Component = () => {
+  const [open, setOpen] = createSignal(false);
   const [quote, { refetch }] = createResource(() => getDeveloperExcuse());
 
   const [target, setTarget] = createSignal<HTMLElement>();
@@ -37,7 +47,13 @@ const App: Component = () => {
   let hoverRef: HTMLDivElement | undefined;
   let linksRef: HTMLElement | undefined;
 
-
+  const { isVisible, isMounted } = createPresence(
+    open,
+    {
+      enterDuration: 600,
+      exitDuration: 300,
+    }
+  );
 
   createEffect(() => {
     if(hoverRef && linksRef && target()) {
@@ -62,6 +78,41 @@ const App: Component = () => {
 
   return (
     <main class={styles["app"]}>
+      <Show when={isMounted()}>
+        <Portal mount={document.getElementById("modal")!}>
+          <div
+            onClick={() => setOpen(false)}
+            class={styles["barrier"]}
+            style={{
+              "background-color": isVisible() ? "rgba(0, 0, 0, 0.5)" : "transparent",
+              "transition": `background-color ${isVisible() ? 600 : 300}ms cubic-bezier(0.1, 0, 0, 1)`,
+            }}/>
+          <aside
+            class={styles["sidebar"]}
+            style={{
+              "width": isVisible() ? "360px" : "0",
+              "translate": isVisible() ? "0px 0px" : "-180px 0px",
+              "transition": ["width", "translate"].map(property => `${property} ${isVisible() ? 600 : 200}ms ${isVisible() ? "cubic-bezier(0.05, 0.7, 0.1, 1.0)" : "cubic-bezier(0.3, 0.0, 0.8, 0.15)"}`).join(","),
+            }}>
+              <button
+                class={styles["settings-button"]}
+                onClick={() => setOpen(false)}>
+                <MaterialSymbol name="close" />
+              </button>
+              <ul>
+                <li>
+                  <button>Test</button>
+                </li>
+              </ul>
+          </aside>
+        </Portal>
+      </Show>
+
+      <button
+        class={styles["settings-button"]}
+        onClick={() => setOpen(prev => !prev)}>
+        <MaterialSymbol name="settings" />
+      </button>
       <img
         class={styles["background"]}
         src="/images/wallpapers/glow/img22.jpg" />
