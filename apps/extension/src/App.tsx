@@ -1,18 +1,15 @@
-import { createSignal } from "solid-js"
-import solidLogo from "./assets/solid.svg"
-import viteLogo from "/vite.svg"
-import "./App.css"
-import { SegmentedButton, ButtonSegment } from "@tab/ui"
+import { createSignal } from 'solid-js'
+import solidLogo from './assets/solid.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { SegmentedButton } from '@tab/ui'
 
 function App() {
-  const [count, setCount] = createSignal(0);
+  const [count, setCount] = createSignal(0)
 
   return (
     <>
-      <SegmentedButton>
-        <span>Text</span>
-        <ButtonSegment>Segment 1</ButtonSegment>
-      </SegmentedButton>
+      <SegmentedButton />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} class="logo" alt="Vite logo" />

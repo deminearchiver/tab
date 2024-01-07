@@ -1,8 +1,9 @@
 {
   "private": true,
-  "name": "@deminearchiver/tab",
-  "description": "Modern New Tab",
+  "name": "tab",
   "version": "0.0.0",
+  "description": "A modern new tab browser extension",
+  "author": "deminearchiver",
   "repository": "https://github.com/deminearchiver/tab",
   "packageManager": "yarn@4.0.2",
   "workspaces": [
@@ -10,9 +11,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:extension": "turbo run dev --filter=extension...",
-    "dev:website": "turbo run dev --filter=website...",
-    "build": "turbo run build"
+    "dev:extension": "turbo run dev --filter=@tab/extension...",
+    "dev:website": "turbo run dev --filter=@tab/website...",
+    "build": "turbo run build",
+    "build:extension": "turbo run build --filter=@tab/extension...",
+    "build:website": "turbo run build --filter=@tab/website..."
   },
   "devDependencies": {
     "turbo": "^1.11.3"
