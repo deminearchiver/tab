@@ -3,11 +3,15 @@
   "name": "@deminearchiver/tab",
   "description": "Modern New Tab",
   "version": "0.0.0",
+  "repository": "https://github.com/deminearchiver/tab",
   "packageManager": "yarn@4.0.2",
   "workspaces": [
+    "apps/*",
     "packages/*"
   ],
   "scripts": {
+    "dev:extension": "turbo run dev --filter=extension...",
+    "dev:website": "turbo run dev --filter=website...",
     "build": "turbo run build"
   },
   "devDependencies": {

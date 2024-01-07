@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "tab",
+  "short_name": "tab",
+  "author": "deminearchiver",
+  "version": "0.0.1",
+  "description": "A modern, open-source new tab extension with no extras and garbage",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "favicon"
+  ]
+}

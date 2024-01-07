@@ -1,0 +1,7 @@
+node_modules/
+
+# Cache
+.turbo
+
+# Build directories
+dist/
