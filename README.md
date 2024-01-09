@@ -5,6 +5,12 @@
 # tab
 A modern new tab extension
 
+Uses:
+- [**SolidJS**](https://solidjs.com)
+- [**Turborepo**](https://turbo.build/repo)
+- [**vanilla-extract**](https://vanilla-extract.style)
+- [**vite-plugin-web-extension**](https://vite-plugin-web-extension.aklinker1.io/)
+
 ## Install
 1. Download the extension from:
 - [**Latest release**](https://github.com/deminearchiver/tab/releases/latest) (recommended)

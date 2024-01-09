@@ -10,12 +10,17 @@
   },
   "dependencies": {
     "@tab/ui": "workspace:*",
-    "solid-js": "^1.8.8"
+    "@vanilla-extract/css": "^1.14.0",
+    "solid-js": "^1.8.8",
+    "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.256",
+    "@types/webextension-polyfill": "^0.10.7",
+    "@vanilla-extract/vite-plugin": "^3.9.3",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
-    "vite-plugin-solid": "^2.8.0"
+    "vite-plugin-solid": "^2.8.0",
+    "vite-plugin-web-extension": "^4.1.1"
   }
 }
