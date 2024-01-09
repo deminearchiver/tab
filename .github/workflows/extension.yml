@@ -22,7 +22,7 @@ jobs:
         run: yarn
       - name: Build for Chrome
         env:
-          BROWSER_TARGET: chrome
+          EXTENSION_BROWSER_TARGET: chrome
         run: yarn build:extension
       - uses: actions/upload-artifact@v3
         with:
@@ -30,7 +30,7 @@ jobs:
           path: apps/extension/dist/
       - name: Build for Firefox
         env:
-          BROWSER_TARGET: firefox
+          EXTENSION_BROWSER_TARGET: firefox
         run: yarn build:extension
       - uses: actions/upload-artifact@v3
         with:

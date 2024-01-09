@@ -1,5 +1,8 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "EXTENSION_BROWSER_TARGET"
+  ],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],

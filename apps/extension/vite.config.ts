@@ -8,7 +8,7 @@ export default defineConfig({
     solid(),
     vanillaExtractPlugin(),
     webExtension({
-      browser: process.env.BROWSER_TARGET || "chrome",
+      browser: process.env.EXTENSION_BROWSER_TARGET || "chrome",
     }),
   ],
 });
