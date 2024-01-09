@@ -46,5 +46,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: tab-firefox
-          path: apps/extensions/dist/
+          path: apps/extension/dist/
 
