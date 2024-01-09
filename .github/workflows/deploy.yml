@@ -3,8 +3,8 @@ on:
   push:
     branches: 
       - main
-    paths-ignore: 
-      - apps/extension/**
+    paths: 
+      - apps/website/**
   workflow_dispatch: 
 
 jobs:
