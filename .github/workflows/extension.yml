@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  chrome:
     continue-on-error: false
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +28,17 @@ jobs:
         with:
           name: tab-chrome
           path: apps/extension/dist/
+  firefox:
+    continue-on-error: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+      - name: Install dependencies
+        run: yarn
       - name: Build for Firefox
         env:
           EXTENSION_BROWSER_TARGET: firefox
@@ -36,3 +47,4 @@ jobs:
         with:
           name: tab-firefox
           path: apps/extensions/dist/
+
