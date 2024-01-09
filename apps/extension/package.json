@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@solid-primitives/bounds": "^0.0.118",
+    "@solid-primitives/mouse": "^2.0.16",
+    "@solid-primitives/timer": "^1.3.7",
     "@tab/ui": "workspace:*",
     "@vanilla-extract/css": "^1.14.0",
     "solid-js": "^1.8.8",
