@@ -48,7 +48,7 @@ export const QuickLinks: Component<QuickLinksProps> = (props) => {
         {
           duration: animate ? 600 : 0,
           // easing: "cubic-bezier(0.1, 0, 0, 1)",
-          easing: getComputedStyle(document.documentElement).getPropertyValue('--emphasized'),
+          easing: getComputedStyle(document.documentElement).getPropertyValue("--easing-emphasized"),
           fill: "forwards",
         }
       );

@@ -3,33 +3,28 @@
 </a>
 
 # tab
-A modern new tab extension
+A modern, lightweight, multi-browser new tab extension without any extras and garbage. Heavily inspired by [**Tabliss**](https://tabliss.io).
 
-Uses:
-- [**SolidJS**](https://solidjs.com)
-- [**Turborepo**](https://turbo.build/repo)
-- [**vanilla-extract**](https://vanilla-extract.style)
-- [**vite-plugin-web-extension**](https://vite-plugin-web-extension.aklinker1.io/)
+## Features
+- Background
+- Clock
+- Quick links
+- Quotes
+
+All of the above features are planned, but most of them aren't yet implemented. For more information on features progress, see [**TODO.md**](TODO.md).
 
 ## Install
 1. Download the extension from:
-- [**Latest release**](https://github.com/deminearchiver/tab/releases/latest) (recommended)
-- [**Latest GitHub Actions run**](https://github.com/deminearchiver/tab/actions) (development build)
+- [**latest release**](https://github.com/deminearchiver/tab/releases/latest) (recommended)
+- [**latest GitHub Actions run**](https://github.com/deminearchiver/tab/actions/workflows/extension.yml) (development build)
 2. Unzip the downloaded archive
 3. In your browser (Chrome / Firefox) enable developer mode, go to the extensions page and load the unpacked extension
 
-## Features
-TODO:
-- [ ] Quick links
-  - Add / remove quick links
-  - Custom icons
-- [ ] Add configuration screen
-  - Allow adding / removing quick links
-- [x] Background
-- [ ] Quotes
-  - [x] Developer excuses
+
+
 
 ## Building from source
+
 This project uses [**Yarn** package manager](https://yarnpkg.com).
 
 1. Clone this repository
@@ -40,10 +35,17 @@ git clone https://github.com/deminearchiver/tab.git
 ```bash
 yarn
 ```
-3. Launch the dev server (powered by Vite)
+3. Launch the dev server (powered by Vite) and Google Chrome
 ```bash
-yarn dev
+yarn dev:extension
 ```
+
+## Awesome
+tab uses the following awesome open-source libraries:
+- [**SolidJS**](https://solidjs.com)
+- [**Turborepo**](https://turbo.build/repo)
+- [**vanilla-extract**](https://vanilla-extract.style)
+- [**vite-plugin-web-extension**](https://vite-plugin-web-extension.aklinker1.io/)
 
 ## License
 This project is licensed under the [**MIT License**](LICENSE).
