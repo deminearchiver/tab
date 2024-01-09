@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@solid-primitives/mouse": "^2.0.16",
+    "@solid-primitives/scroll": "^2.0.20",
+    "@tab/ui": "workspace:*",
     "solid-js": "^1.8.7"
   },
   "devDependencies": {

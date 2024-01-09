@@ -1,18 +1,5 @@
-export class Offset {
-  public constructor(
-    public readonly dx: number,
-    public readonly dy: number
-  ) {}
-}
-
-abstract class Curve {
-  public transform(t: number): number {
-    if (t === 0 || t === 1) return t;
-    return this.transformInternal(t);
-  };
-
-  protected abstract transformInternal(t: number): number;
-}
+import { Offset } from "../common";
+import { Curve } from "./curve";
 
 class Cubic extends Curve {
   private static readonly cubicErrorBound = 0.001;
@@ -48,6 +35,10 @@ class Cubic extends Curve {
       }
     }
   }
+
+  public toCSS(samples: number, format?: boolean): string {
+    return `cubic-bezier(${this.a}, ${this.b}, ${this.c}, ${this.d})`;
+  }
 }
 export class ThreePointCubic extends Curve {
   public constructor(
@@ -82,20 +73,3 @@ export class ThreePointCubic extends Curve {
     }
   }
 }
-export const emphasized = new ThreePointCubic(
-  new Offset(0.05, 0), new Offset(0.133333, 0.06),
-  new Offset(0.166666, 0.4),
-  new Offset(0.208333, 0.82), new Offset(0.25, 1),
-);
-
-export const createLinear = (
-  curve: Curve,
-  samples: number,
-) => {
-  const result: number[] = [];
-  for(let i = 0; i < samples; i++) {
-    const x = i * (1 / samples);
-    result.push(curve.transform(x));
-  }
-  return `linear(${result.join(",")})`;
-};

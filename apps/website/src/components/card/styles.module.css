@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+
+  padding: 16px;
+
+  transform-style: preserve-3d;
+  transform:
+    perspective(5000px)
+    rotateX(var(--rotateX))
+    rotateY(var(--rotateY));
+
+  transition: transform 200ms var(--easing-standard);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image:
+    linear-gradient(
+      to bottom right,
+      rgba(76, 0, 255, 0.3),
+      rgba(255, 0, 0, 0.3)
+    );
+  transform: translateZ(-32px);
+  border-radius: 28px;
+
+  box-shadow: 12px 6px 32px rgba(0, 0, 0, 0.25);
+}

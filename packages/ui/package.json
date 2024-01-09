@@ -3,7 +3,10 @@
   "name": "@tab/ui",
   "version": "0.0.0",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./common": "./src/common/index.ts",
+    "./utils": "./src/utils/index.ts",
+    "./curves": "./src/curves/index.ts"
   },
   "dependencies": {
     "@solid-primitives/bounds": "^0.0.118",
