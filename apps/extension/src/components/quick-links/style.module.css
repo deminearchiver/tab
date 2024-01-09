@@ -1,5 +1,6 @@
 .quick-links {
   position: relative;
+  width: min-content;
 }
 
 .indicator {

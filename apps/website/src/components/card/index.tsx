@@ -2,6 +2,7 @@ import { useMousePosition } from "@solid-primitives/mouse";
 import { ParentComponent, createSignal, createEffect } from "solid-js";
 
 import styles from "./styles.module.css";
+import { useWindowScrollPosition } from "@solid-primitives/scroll";
 
 export const Card: ParentComponent = (props) => {
   const [rotateX, setRotateX] = createSignal(0);

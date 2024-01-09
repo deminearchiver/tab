@@ -1,5 +1,7 @@
 .quick-links {
   position: relative;
+  width: min-content;
+  transform-style: preserve-3d;
 }
 
 .indicator {
@@ -9,6 +11,8 @@
   border-radius: 24px;
 
   transition: background-color 100ms ease-in-out;
+
+  transform: translateZ(-16px);
 
   &.active {
     background-color: rgba(255, 255, 255, 0.1);
@@ -25,7 +29,6 @@
 .wrapper {
   padding: 16px;
 }
-
 .link {
   width: 96px;
   height: 96px;
@@ -42,9 +45,9 @@
   border-radius: 16px;
 
   transition:
-    scale 600ms var(--easing-emphasized),
-    border-color 600ms var(--easing-emphasized),
-    box-shadow 600ms var(--easing-emphasized);
+    scale 600ms ease,
+    border-color 600ms ease,
+    box-shadow 600ms ease;
 }
 
 
@@ -53,21 +56,12 @@
   border-width: 2px;
   scale: 1.1;
   box-shadow: 8px 6px 32px rgba(0, 0, 0, 0.5);
-
-
 }
 .wrapper:active .link {
   border-width: 5px;
   border-color: red;
   scale: .95;
 }
-/* .link:active {
-  border-width: 5px;
-  border-color: red;
-  scale: .95;
-} */
-
-
 
 .icon {
   width: 32px;

@@ -1,7 +1,11 @@
 .card {
   position: relative;
 
+  width: min-content;
+
   padding: 16px;
+
+  /* overflow: hidden; */
 
   transform-style: preserve-3d;
   transform:

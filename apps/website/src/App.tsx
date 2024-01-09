@@ -11,14 +11,14 @@ const links = [
 
 const quickLinks = [
   "https://youtube.com",
+  "https://music.youtube.com",
   "https://twitch.tv",
   "https://facebook.com",
   "https://twitter.com",
   "https://github.com",
-  "https://youtube.com",
-  "https://youtube.com",
-  "https://youtube.com",
-  "https://youtube.com",
+  "https://solidjs.com",
+  "https://vitejs.dev",
+  "https://developer.mozilla.org/en-US",
   "https://youtube.com",
 ];
 
@@ -66,7 +66,8 @@ const App: Component = () => {
               <li>
                 <a
                   class={styles["link"]}
-                  href="https://github.com/deminearchiver/tab">
+                  href="https://github.com/deminearchiver/tab"
+                  target="_blank">
                   <img
                     src="images/github.svg"
                     width={32}
@@ -77,13 +78,16 @@ const App: Component = () => {
           </nav>
         </header>
       </div>
-      <img
-        class={styles["background"]}
-        src="images/img21.jpg" />
-      <h1 id="features">Features</h1>
-      <Card>
-        <QuickLinks links={quickLinks} />
-      </Card>
+      <article>
+        <h1 id="features">Features</h1>
+        Text
+        <section>
+          <Card>
+            <QuickLinks links={quickLinks} />
+          </Card>
+          <h3>Quick Links</h3>
+        </section>
+      </article>
       <h1 id="download">Download</h1>
     </main>
   )
