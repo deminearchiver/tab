@@ -28,15 +28,12 @@ class Cubic extends Curve {
       if (Math.abs(t - estimate) < Cubic.cubicErrorBound) {
         return Cubic.evaluateCubic(this.b, this.d, midpoint);
       }
-      if (estimate < t) {
-        start = midpoint;
-      } else {
-        end = midpoint;
-      }
+      if (estimate < t) start = midpoint;
+      else end = midpoint;
     }
   }
 
-  public toCSS(samples: number, format?: boolean): string {
+  public toCssEasing(samples: number, format?: boolean): string {
     return `cubic-bezier(${this.a}, ${this.b}, ${this.c}, ${this.d})`;
   }
 }
@@ -51,25 +48,24 @@ export class ThreePointCubic extends Curve {
     super();
   }
 
-  public transformInternal(t: number) {
-    const firstCurve = t < this.midpoint.dx;
-    const scaleX = firstCurve ? this.midpoint.dx : (1.0 - this.midpoint.dx);
-    const scaleY = firstCurve ? this.midpoint.dy : (1.0 - this.midpoint.dy);
-    const scaledT = (t - (firstCurve ? 0.0 : this.midpoint.dx)) / scaleX;
-    if (firstCurve) {
+  protected transformInternal(t: number) {
+    const firstCurve = t < this.midpoint.x;
+    const scaleX = firstCurve ? this.midpoint.x : (1 - this.midpoint.x);
+    const scaleY = firstCurve ? this.midpoint.y : (1 - this.midpoint.y);
+    const scaledT = (t - (firstCurve ? 0 : this.midpoint.x)) / scaleX;
+    if (firstCurve)
       return new Cubic(
-        this.a1.dx / scaleX,
-        this.a1.dy / scaleY,
-        this.b1.dx / scaleX,
-        this.b1.dy / scaleY,
+        this.a1.x / scaleX,
+        this.a1.y / scaleY,
+        this.b1.x / scaleX,
+        this.b1.y / scaleY,
       ).transform(scaledT) * scaleY;
-    } else {
+    else
       return new Cubic(
-        (this.a2.dx - this.midpoint.dx) / scaleX,
-        (this.a2.dy - this.midpoint.dy) / scaleY,
-        (this.b2.dx - this.midpoint.dx) / scaleX,
-        (this.b2.dy - this.midpoint.dy) / scaleY,
-      ).transform(scaledT) * scaleY + this.midpoint.dy;
-    }
+        (this.a2.x - this.midpoint.x) / scaleX,
+        (this.a2.y - this.midpoint.y) / scaleY,
+        (this.b2.x - this.midpoint.x) / scaleX,
+        (this.b2.y - this.midpoint.y) / scaleY,
+      ).transform(scaledT) * scaleY + this.midpoint.y;
   }
 }

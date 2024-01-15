@@ -4,8 +4,10 @@ import { QuickLinks } from "./components/quick-links";
 import { useMousePosition } from "@solid-primitives/mouse";
 import { createElementBounds } from "@solid-primitives/bounds";
 import { makeTimer } from "@solid-primitives/timer";
-
-
+import { createDateNow } from "@solid-primitives/date";
+import { darkTheme, lightTheme, vars } from "./theme.css";
+import { makePersisted } from "@solid-primitives/storage";
+import { createStore } from "solid-js/store";
 
 
 
@@ -67,46 +69,67 @@ const Card: ParentComponent = (props) => {
   );
 }
 
-const getTime = () => {
-  const now = new Date();
-  const components = [
-    now.getHours(),
-    now.getMinutes(),
-    now.getSeconds(),
-  ];
-  return components
+interface FormatTimeOptions {
+  useMeridiem?: boolean;
+  hours?: boolean;
+  minutes?: boolean;
+  seconds?: boolean;
+}
+
+const formatTime = (
+  date: Date,
+  options: FormatTimeOptions = {
+    useMeridiem: false,
+    hours: true,
+    minutes: true,
+    seconds: false,
+  },
+) => {
+  const hours = date.getHours();
+    const components: number[] = [];
+  if(options.hours ?? true) components.push(options.useMeridiem ? hours % 12 || 12 : hours);
+  if(options.minutes ?? true) components.push(date.getMinutes());
+  if(options.seconds) components.push(date.getSeconds());
+  const formatted = components
     .map(value => value.toString().padStart(2, "0"),)
     .join(" : ");
+  return options.useMeridiem ? `${formatted} ${hours >= 12 ? "PM" : "AM"}` : formatted;
 }
+
+enum ThemeMode {
+  Light,
+  Dark,
+}
+type SettingsStore = {
+  mode: ThemeMode,
+}
+
 const App: Component = () => {
-  const [time, setTime] = createSignal(getTime());
-
-  makeTimer(
-    () => setTime(getTime()),
-    1000,
-    setInterval,
-  );
-
+  const [settings, setSettings] = makePersisted(
+    createStore<SettingsStore>({
+      mode: ThemeMode.Dark,
+    }),
+    {
+      name: "settings"
+    }
+  )
+  const [now] = createDateNow(1000);
   return (
-    <main class={styles["app"]}>
-      <img
-        class={styles["background"]}
-        src="/images/wallpapers/glow/img22.jpg" />
-      <article>
-        <span
-          class={styles["time"]}>
-          {time()}
-        </span>
-      </article>
-      <article>
-        <QuickLinks links={links} />
-      </article>
-      {/* <article>
-        <Card>
+      <main class={styles["app"]}>
+        {/* <span onClick={() => setSettings("mode", ThemeMode.Light)}>{settings.mode}</span> */}
+        <img
+          class={styles["background"]}
+          src="/images/wallpapers/glow/img22.jpg" />
+        <article>
+          <span
+            class={styles["time"]}>
+            {formatTime(now(), { seconds: true })}
+          </span>
+        </article>
+        <article>
           <QuickLinks links={links} />
-        </Card>
-      </article> */}
-    </main>
+        </article>
+      </main>
   )
 }
 

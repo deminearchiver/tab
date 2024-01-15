@@ -6,7 +6,7 @@ export abstract class Curve {
     return this.transformInternal(t);
   };
 
-  public toCSS(samples: number, format: boolean = false): string {
+  protected toCssEasingLinear(samples: number, format: boolean = false): string {
     const result: number[] = [];
     for(let i = 0; i < samples; i++) {
       const x = i * (1 / samples);
@@ -20,5 +20,9 @@ export abstract class Curve {
       return `linear(${result.join(",\n  ")})`;
     else
       return `linear(${result.join(",")})`;
+  }
+
+  public toCssEasing(samples: number, format: boolean = false): string {
+    return this.toCssEasingLinear(samples, format);
   }
 }

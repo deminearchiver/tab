@@ -1,22 +1,19 @@
 import { createContextProvider } from "@solid-primitives/context";
+import { createToken, createTokenizer, resolveTokens } from "@solid-primitives/jsx-tokenizer";
 import { Refs, resolveElements } from "@solid-primitives/refs";
 import { For, ParentComponent, ParentProps, Setter, children, createEffect, createSignal, sharedConfig } from "solid-js";
 
+const Tokenizer = createTokenizer();
+const SegmentToken = createToken(Tokenizer, (props) => {
+
+});
+
 export const SegmentedButton: ParentComponent = (props) => {
-  const resolved = children(() => props.children);
-
-  const [refs, setRefs] = createSignal<HTMLElement[]>([]);
-
-  const onClick = () => {
-    
-  }
-
+  const segments = resolveTokens(Tokenizer, () => props.children);
 
   return (
     <div>
-      <Refs ref={refs}>
-        {resolved()}
-      </Refs>
+      {segments()}
     </div>  
   );
 }

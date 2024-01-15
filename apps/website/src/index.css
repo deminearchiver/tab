@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto Flex", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -25,4 +25,70 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
+}
+
+a {
+  position: relative;
+  color: violet;
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    red 0%,
+    blue 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: left 100%;
+
+  transition: background-size 200ms ease;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+  &:active {
+    background-size: 100% 100%;
+  }
+
+/* 
+  &:hover {
+    background-size: 100% 2px;
+  }
+  &:active {
+    background-size: 100% 100%;
+  } */
+
+  /* &::before {
+    content: "";
+    z-index: auto;
+    position: absolute;
+
+    background-image: linear-gradient(
+      to right,
+      red,
+      blue
+    );
+    mix-blend-mode: lighten;
+
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transition: all 150ms ease;
+  }
+
+  &:hover::before {
+    border-radius: 2px;
+    top: calc(100% - 2px);
+    bottom: 0;
+  }
+
+  &:active::before {
+    border-radius: 4px;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+  } */
+  
 }

@@ -1,8 +1,7 @@
 import { Component, For, createEffect, createSignal } from "solid-js";
 import styles from "./style.module.css";
-import { Hover, HoverGroup } from "@tab/ui";
+import { Hover, HoverGroup } from "@tab/ui/components/hover";
 import browser from "webextension-polyfill";
-
 
 
 
@@ -15,22 +14,18 @@ const getFaviconUrl = (pageUrl: string, size: number): string => {
   } catch(error) {
     const url = new URL("https://icon.horse/icon/");
     url.searchParams.set("uri", pageUrl);
-    // url.searchParams.set("size", "32");
     return url.toString();
   }
 };
 
 
-
 export type QuickLinksProps = {
   links: string[];
 }
-
 export const QuickLinks: Component<QuickLinksProps> = (props) => {
   const [selected, setSelected] = createSignal<HTMLElement>();
   
   const [visible, setVisible] = createSignal(false);
-
   let indicatorRef!: HTMLDivElement;
 
   createEffect<boolean>((animate) => {
@@ -47,7 +42,7 @@ export const QuickLinks: Component<QuickLinksProps> = (props) => {
         ],
         {
           duration: animate ? 600 : 0,
-          // easing: "cubic-bezier(0.1, 0, 0, 1)",
+          // easing: "cubic-bezier(0.1, `0, 0, 1)",
           easing: getComputedStyle(document.documentElement).getPropertyValue("--easing-emphasized"),
           fill: "forwards",
         }
@@ -72,7 +67,7 @@ export const QuickLinks: Component<QuickLinksProps> = (props) => {
         <ul class={styles["list"]}>
           <HoverGroup>
             <For each={props.links}>
-              {(url) => (
+              {(url, index) => (
                 <li class={styles["wrapper"]}>
                   <a
                     class={styles["link"]}

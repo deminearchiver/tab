@@ -969,6 +969,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material/material-color-utilities@npm:^0.2.7":
+  version: 0.2.7
+  resolution: "@material/material-color-utilities@npm:0.2.7"
+  checksum: 7734f8d7cffe6a92d47fcca82b4846e39ffd79be9c057f3299466696dcdee5379b8a8a3aa6a9692d40bd6900905f689105d9a8ce47882ab22348df10621f70cd
+  languageName: node
+  linkType: hard
+
 "@mdx-js/mdx@npm:^3.0.0":
   version: 3.0.0
   resolution: "@mdx-js/mdx@npm:3.0.0"
@@ -1207,6 +1214,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solid-primitives/date@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@solid-primitives/date@npm:2.0.18"
+  dependencies:
+    "@solid-primitives/memo": "npm:^1.3.5"
+    "@solid-primitives/timer": "npm:^1.3.7"
+    "@solid-primitives/utils": "npm:^6.2.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 4c5e46d4b4d91b181c49db31cd25d16a52cdb96a6b3e7d7971f9e306ec61b674ff1d8b3c673cbab56bf397e396229bba2953a95bdba15706bc008765c0a16523
+  languageName: node
+  linkType: hard
+
 "@solid-primitives/event-listener@npm:^2.3.0":
   version: 2.3.0
   resolution: "@solid-primitives/event-listener@npm:2.3.0"
@@ -1218,6 +1238,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solid-primitives/jsx-tokenizer@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@solid-primitives/jsx-tokenizer@npm:1.0.7"
+  dependencies:
+    "@solid-primitives/utils": "npm:^6.2.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 54c2508edb0e99a4b677343379622736be22158fc9ef2d935b57fbd136dd6826308d47818d667e2f53fcac3fd2606cb44566c434f60dbe0cb133e11b99608b53
+  languageName: node
+  linkType: hard
+
 "@solid-primitives/map@npm:^0.4.8":
   version: 0.4.8
   resolution: "@solid-primitives/map@npm:0.4.8"
@@ -1226,6 +1257,18 @@ __metadata:
   peerDependencies:
     solid-js: ^1.6.12
   checksum: 0b75cde1d30450fce949d9ba9aaf97de30f865f2e0e45a1bf3cfbc9ad745fdb39066278b29939498ad7d2dfb82a32a23a21d4520bd6bab18b3e5d3e459720a9d
+  languageName: node
+  linkType: hard
+
+"@solid-primitives/memo@npm:^1.3.5":
+  version: 1.3.5
+  resolution: "@solid-primitives/memo@npm:1.3.5"
+  dependencies:
+    "@solid-primitives/scheduled": "npm:^1.4.1"
+    "@solid-primitives/utils": "npm:^6.2.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: a0aa3e338c350d4f35306d99f32640e205afee0d93930d037a8a0f50b9fba7955eebbc2bce581c21c59093810e2c9648f6ff1a815e291021295439ed0a47d4d6
   languageName: node
   linkType: hard
 
@@ -1301,6 +1344,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solid-primitives/scheduled@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@solid-primitives/scheduled@npm:1.4.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 41a7f166a2f70e6d796c8af9b44ccf6eec1bbc01212fbcc4fa20183bdb32454539e2b5f54a65f6c74ed2626d16a832d4939c8733cee4261f0ead5d711d81a003
+  languageName: node
+  linkType: hard
+
 "@solid-primitives/scroll@npm:^2.0.20":
   version: 2.0.20
   resolution: "@solid-primitives/scroll@npm:2.0.20"
@@ -1322,6 +1374,21 @@ __metadata:
   peerDependencies:
     solid-js: ^1.6.12
   checksum: e3803368146d47d8e981a628bd5c020ff3d0a7c7a27c7416c9d29e11b1213d58ba9ee6c235442823f2b14f901850ad9feaa19076a02df34519389bcb366d1bb4
+  languageName: node
+  linkType: hard
+
+"@solid-primitives/storage@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@solid-primitives/storage@npm:2.1.1"
+  dependencies:
+    "@solid-primitives/utils": "npm:^6.2.1"
+  peerDependencies:
+    solid-js: ^1.6.12
+    solid-start: ">=0.2.26"
+  peerDependenciesMeta:
+    solid-start:
+      optional: true
+  checksum: 14f9cd739be028dd40267c2ae9da51e817b8d261624f2388e4d78b8fba3bebfa1cc30403976b6af33435b8330f30da3704ce2625003c457da1ae5036ea9bad07
   languageName: node
   linkType: hard
 
@@ -1373,13 +1440,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@tab/extension@workspace:apps/extension"
   dependencies:
+    "@material/material-color-utilities": "npm:^0.2.7"
     "@solid-primitives/bounds": "npm:^0.0.118"
+    "@solid-primitives/context": "npm:^0.2.1"
+    "@solid-primitives/date": "npm:^2.0.18"
+    "@solid-primitives/map": "npm:^0.4.8"
     "@solid-primitives/mouse": "npm:^2.0.16"
+    "@solid-primitives/storage": "npm:^2.1.1"
     "@solid-primitives/timer": "npm:^1.3.7"
     "@tab/ui": "workspace:*"
     "@types/chrome": "npm:^0.0.256"
     "@types/webextension-polyfill": "npm:^0.10.7"
     "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/sprinkles": "npm:^1.6.1"
     "@vanilla-extract/vite-plugin": "npm:^3.9.3"
     solid-js: "npm:^1.8.8"
     typescript: "npm:^5.3.3"
@@ -1397,6 +1470,7 @@ __metadata:
     "@solid-primitives/bounds": "npm:^0.0.118"
     "@solid-primitives/context": "npm:^0.2.1"
     "@solid-primitives/event-listener": "npm:^2.3.0"
+    "@solid-primitives/jsx-tokenizer": "npm:^1.0.7"
     "@solid-primitives/map": "npm:^0.4.8"
     "@solid-primitives/mouse": "npm:^2.0.16"
     "@solid-primitives/presence": "npm:^0.0.3"
@@ -1416,6 +1490,8 @@ __metadata:
     "@solid-primitives/mouse": "npm:^2.0.16"
     "@solid-primitives/scroll": "npm:^2.0.20"
     "@tab/ui": "workspace:*"
+    "@vanilla-extract/css": "npm:^1.14.0"
+    "@vanilla-extract/vite-plugin": "npm:^3.9.3"
     remark-gfm: "npm:^4.0.0"
     solid-js: "npm:^1.8.7"
     solid-jsx: "npm:^1.1.4"
@@ -1669,6 +1745,15 @@ __metadata:
   version: 1.0.3
   resolution: "@vanilla-extract/private@npm:1.0.3"
   checksum: 62a74cb4fce877debb8043cda8b9efb8ca142b56d6a64525929a16a6e6c4f9bc181a6ea099b5b6ed08d0c7b3e8389b7e05f7fe9b4b0fae6eb74c2a69cb6ee2f7
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/sprinkles@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "@vanilla-extract/sprinkles@npm:1.6.1"
+  peerDependencies:
+    "@vanilla-extract/css": ^1.0.0
+  checksum: 7ddd2ab7c88b5740260e09aba5399d938d9a46142a0652842e8cd3fe34cd2fd2fbeb75060718bb44cb1a81dce280bb9955ae35defd89f7045e3a6822baf2b5ae
   languageName: node
   linkType: hard
 

@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import { useWindowScrollPosition } from "@solid-primitives/scroll";
 import { Card } from "./components/card";
 import { QuickLinks } from "./components/quick-links";
+import MD1 from "./quick-links.mdx";
 
 const links = [
   ["Features", "#features"],
@@ -80,12 +81,26 @@ const App: Component = () => {
       </div>
       <article>
         <h1 id="features">Features</h1>
-        Text
-        <section>
-          <Card>
-            <QuickLinks links={quickLinks} />
-          </Card>
-          <h3>Quick Links</h3>
+        <section 
+          style={{
+          "display": "grid",
+          "grid-template-columns": "1fr 1fr",
+          "width": "100%",
+          "gap": "24px",
+          "padding": "16px"
+        }}>
+          <div style={{
+            "aspect-ratio": "16 / 9",
+            "background-image": "linear-gradient(to bottom right, rgba(255, 100, 100, 0.5), rgba(0, 128, 255, 0.5))",
+            "border-radius": "28px",
+          }}>
+          </div>
+          <div>
+            <MD1 />
+          </div>
+          <button class="test1" style={{
+            "grid-column": "2",
+          }}>Learn more</button>
         </section>
       </article>
       <h1 id="download">Download</h1>
