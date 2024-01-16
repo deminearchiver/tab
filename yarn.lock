@@ -1344,6 +1344,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solid-primitives/rootless@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "@solid-primitives/rootless@npm:1.4.3"
+  dependencies:
+    "@solid-primitives/utils": "npm:^6.2.2"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: ad282ca5e29fd634c623e318613761228af2b371ae2f1ad47efa2fcec78f5b86696369f05feabf6f35b0a0c92ad4ae834859d0a2107786cc2679f23c1c6d9718
+  languageName: node
+  linkType: hard
+
 "@solid-primitives/scheduled@npm:^1.4.1":
   version: 1.4.1
   resolution: "@solid-primitives/scheduled@npm:1.4.1"
@@ -1421,6 +1432,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@solid-primitives/utils@npm:^6.2.2":
+  version: 6.2.2
+  resolution: "@solid-primitives/utils@npm:6.2.2"
+  peerDependencies:
+    solid-js: ^1.6.12
+  checksum: 59a089691de91c84eef73720747cce34770151afb6abc3229637e6bb138523d9fa67b8397267ae282250fff3f60d357917144dfa91d33b4143294b31c3c3b764
+  languageName: node
+  linkType: hard
+
 "@szmarczak/http-timer@npm:^5.0.1":
   version: 5.0.1
   resolution: "@szmarczak/http-timer@npm:5.0.1"
@@ -1446,6 +1466,7 @@ __metadata:
     "@solid-primitives/date": "npm:^2.0.18"
     "@solid-primitives/map": "npm:^0.4.8"
     "@solid-primitives/mouse": "npm:^2.0.16"
+    "@solid-primitives/rootless": "npm:^1.4.3"
     "@solid-primitives/storage": "npm:^2.1.1"
     "@solid-primitives/timer": "npm:^1.3.7"
     "@tab/ui": "workspace:*"
@@ -1454,6 +1475,8 @@ __metadata:
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
     "@vanilla-extract/vite-plugin": "npm:^3.9.3"
+    idb: "npm:^8.0.0"
+    nanoid: "npm:^5.0.4"
     solid-js: "npm:^1.8.8"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.0.11"
@@ -3426,6 +3449,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"idb@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "idb@npm:8.0.0"
+  checksum: d27547e03939d3d269cea38c3d4528569621ec134c717ebfc1ff816dce18e4f77372dba1d930384a9949ac56dc600e3790f98f1812a4164004e71fec302ee491
+  languageName: node
+  linkType: hard
+
 "immediate@npm:~3.0.5":
   version: 3.0.6
   resolution: "immediate@npm:3.0.6"
@@ -4904,6 +4934,15 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: e3fb661aa083454f40500473bb69eedb85dc160e763150b9a2c567c7e9ff560ce028a9f833123b618a6ea742e311138b591910e795614a629029e86e180660f3
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "nanoid@npm:5.0.4"
+  bin:
+    nanoid: bin/nanoid.js
+  checksum: 28c22d3ff96ea9e6abc059813b8483890c1f52de0f185d8347b0ea205c5966530205c374f1f77492bb53dc5d649de5d36d6eade16645055eb9220dc62080c1b1
   languageName: node
   linkType: hard
 

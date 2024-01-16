@@ -8,6 +8,7 @@ import { createDateNow } from "@solid-primitives/date";
 import { darkTheme, lightTheme, vars } from "./theme.css";
 import { makePersisted } from "@solid-primitives/storage";
 import { createStore } from "solid-js/store";
+import { useExtensionDatabase } from "./lib/database/solid";
 
 
 
@@ -96,27 +97,11 @@ const formatTime = (
   return options.useMeridiem ? `${formatted} ${hours >= 12 ? "PM" : "AM"}` : formatted;
 }
 
-enum ThemeMode {
-  Light,
-  Dark,
-}
-type SettingsStore = {
-  mode: ThemeMode,
-}
-
 const App: Component = () => {
-  const [settings, setSettings] = makePersisted(
-    createStore<SettingsStore>({
-      mode: ThemeMode.Dark,
-    }),
-    {
-      name: "settings"
-    }
-  )
   const [now] = createDateNow(1000);
+
   return (
       <main class={styles["app"]}>
-        {/* <span onClick={() => setSettings("mode", ThemeMode.Light)}>{settings.mode}</span> */}
         <img
           class={styles["background"]}
           src="/images/wallpapers/glow/img22.jpg" />
