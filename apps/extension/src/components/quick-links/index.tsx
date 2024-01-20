@@ -11,7 +11,7 @@ const getFaviconUrl = (pageUrl: string, size: number): string => {
     url.searchParams.set("pageUrl", pageUrl);
     url.searchParams.set("size", size.toString());
     return url.toString();
-  } catch(error) {
+  } catch {
     const url = new URL("https://icon.horse/icon/");
     url.searchParams.set("uri", pageUrl);
     return url.toString();
@@ -71,7 +71,8 @@ export const QuickLinks: Component<QuickLinksProps> = (props) => {
                 <li class={styles["wrapper"]}>
                   <a
                     class={styles["link"]}
-                    href={url}>
+                    href={url}
+                    title={new URL(url).hostname}>
                     <img
                       class={styles["icon"]}
                       src={getFaviconUrl(url, 32)} />

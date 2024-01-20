@@ -1,74 +1,34 @@
-import { Component, ParentComponent, createEffect, createSignal } from "solid-js";
+import { Component, ParentComponent, createEffect, createSignal, from } from "solid-js";
 import styles from "./App.module.css";
 import { QuickLinks } from "./components/quick-links";
-import { useMousePosition } from "@solid-primitives/mouse";
-import { createElementBounds } from "@solid-primitives/bounds";
-import { makeTimer } from "@solid-primitives/timer";
 import { createDateNow } from "@solid-primitives/date";
-import { darkTheme, lightTheme, vars } from "./theme.css";
-import { makePersisted } from "@solid-primitives/storage";
-import { createStore } from "solid-js/store";
-import { useExtensionDatabase } from "./lib/database/solid";
-
-
+import { MaterialSymbol } from "./components/icon";
+import { ThemeMode, useSettings } from "./settings";
+import { Time } from "@tab/ui/components/time"
 
 const links = [
+  // "https://youtube.com",
+  // "https://music.youtube.com",
+  // "https://twitch.tv",
+  // "https://github.com",
+  // "https://discord.com",
+  // "https://developer.chrome.com/docs/extensions",
+  // "https://turbo.build/repo",
+  // "https://solidjs.com",
+  // "https://vitejs.dev",
+  // "https://vanilla-extract.style",
+
   "https://youtube.com",
   "https://music.youtube.com",
   "https://twitch.tv",
   "https://github.com",
+  "https://mail.google.com",
   "https://discord.com",
-  "https://developer.chrome.com/docs/extensions",
-  "https://turbo.build/repo",
   "https://solidjs.com",
   "https://vitejs.dev",
   "https://vanilla-extract.style",
+  "https://turbo.build/repo",
 ];
-
-const Card: ParentComponent = (props) => {
-  const [rotateX, setRotateX] = createSignal(0);
-  const [rotateY, setRotateY] = createSignal(0);
-
-  let [cardRef, setCardRef] = createSignal<HTMLElement>();
-
-  const mouse = useMousePosition();
-
-  createEffect(() => {
-    if(mouse.isInside) {
-      const rect = cardRef()!.getBoundingClientRect();
-
-      const x = rect.left;
-      const y = rect.top;
-      const width = rect.width;
-      const height = rect.height;
-
-      const centerX = x + width / 2;
-      const centerY = y + height / 2;
-
-      const offsetX = (mouse.x - centerX) / centerX;
-      const offsetY = (mouse.y - centerY) / centerY;
-
-      setRotateX(offsetY * -25);
-      setRotateY(offsetX * 25);
-    } else {
-      setRotateX(0);
-      setRotateY(0);
-    }
-  });
-
-  return (
-    <div
-      ref={setCardRef}
-      class={styles["card"]}
-      style={{
-        "--rotateX": `${rotateX()}deg`,
-        "--rotateY": `${rotateY()}deg`,
-      }}
-      >
-      {props.children}
-    </div>
-  );
-}
 
 interface FormatTimeOptions {
   useMeridiem?: boolean;
@@ -97,24 +57,26 @@ const formatTime = (
   return options.useMeridiem ? `${formatted} ${hours >= 12 ? "PM" : "AM"}` : formatted;
 }
 
-const App: Component = () => {
-  const [now] = createDateNow(1000);
 
+const App: Component = () => {
   return (
-      <main class={styles["app"]}>
+      <div class={styles["app"]}>
         <img
           class={styles["background"]}
           src="/images/wallpapers/glow/img22.jpg" />
-        <article>
+        {/* <article>
           <span
             class={styles["time"]}>
             {formatTime(now(), { seconds: true })}
           </span>
-        </article>
+        </article> */}
+        <section>
+          <Time />
+        </section>
         <article>
           <QuickLinks links={links} />
         </article>
-      </main>
+      </div>
   )
 }
 

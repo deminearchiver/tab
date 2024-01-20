@@ -55,7 +55,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.21.1, @babel/generator@npm:^7.23.6":
+"@babel/generator@npm:^7.23.6":
   version: 7.23.6
   resolution: "@babel/generator@npm:7.23.6"
   dependencies:
@@ -152,7 +152,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.18.6, @babel/helper-module-imports@npm:^7.22.15":
+"@babel/helper-module-imports@npm:^7.22.15":
   version: 7.22.15
   resolution: "@babel/helper-module-imports@npm:7.22.15"
   dependencies:
@@ -357,7 +357,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.17.8":
   version: 7.23.8
   resolution: "@babel/runtime@npm:7.23.8"
   dependencies:
@@ -395,7 +395,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.0.0, @babel/types@npm:^7.18.6, @babel/types@npm:^7.20.7, @babel/types@npm:^7.21.2, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.5, @babel/types@npm:^7.23.0, @babel/types@npm:^7.23.6, @babel/types@npm:^7.8.3":
+"@babel/types@npm:^7.0.0, @babel/types@npm:^7.18.6, @babel/types@npm:^7.20.7, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.5, @babel/types@npm:^7.23.0, @babel/types@npm:^7.23.6, @babel/types@npm:^7.8.3":
   version: 7.23.6
   resolution: "@babel/types@npm:7.23.6"
   dependencies:
@@ -458,13 +458,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/android-arm64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/android-arm64@npm:0.18.20"
-  conditions: os=android & cpu=arm64
-  languageName: node
-  linkType: hard
-
 "@esbuild/android-arm64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/android-arm64@npm:0.19.11"
@@ -475,13 +468,6 @@ __metadata:
 "@esbuild/android-arm@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/android-arm@npm:0.17.6"
-  conditions: os=android & cpu=arm
-  languageName: node
-  linkType: hard
-
-"@esbuild/android-arm@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/android-arm@npm:0.18.20"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
@@ -500,13 +486,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/android-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/android-x64@npm:0.18.20"
-  conditions: os=android & cpu=x64
-  languageName: node
-  linkType: hard
-
 "@esbuild/android-x64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/android-x64@npm:0.19.11"
@@ -517,13 +496,6 @@ __metadata:
 "@esbuild/darwin-arm64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/darwin-arm64@npm:0.17.6"
-  conditions: os=darwin & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@esbuild/darwin-arm64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/darwin-arm64@npm:0.18.20"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
@@ -542,13 +514,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/darwin-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/darwin-x64@npm:0.18.20"
-  conditions: os=darwin & cpu=x64
-  languageName: node
-  linkType: hard
-
 "@esbuild/darwin-x64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/darwin-x64@npm:0.19.11"
@@ -559,13 +524,6 @@ __metadata:
 "@esbuild/freebsd-arm64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/freebsd-arm64@npm:0.17.6"
-  conditions: os=freebsd & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@esbuild/freebsd-arm64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/freebsd-arm64@npm:0.18.20"
   conditions: os=freebsd & cpu=arm64
   languageName: node
   linkType: hard
@@ -584,13 +542,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/freebsd-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/freebsd-x64@npm:0.18.20"
-  conditions: os=freebsd & cpu=x64
-  languageName: node
-  linkType: hard
-
 "@esbuild/freebsd-x64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/freebsd-x64@npm:0.19.11"
@@ -601,13 +552,6 @@ __metadata:
 "@esbuild/linux-arm64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/linux-arm64@npm:0.17.6"
-  conditions: os=linux & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@esbuild/linux-arm64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-arm64@npm:0.18.20"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -626,13 +570,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/linux-arm@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-arm@npm:0.18.20"
-  conditions: os=linux & cpu=arm
-  languageName: node
-  linkType: hard
-
 "@esbuild/linux-arm@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/linux-arm@npm:0.19.11"
@@ -643,13 +580,6 @@ __metadata:
 "@esbuild/linux-ia32@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/linux-ia32@npm:0.17.6"
-  conditions: os=linux & cpu=ia32
-  languageName: node
-  linkType: hard
-
-"@esbuild/linux-ia32@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-ia32@npm:0.18.20"
   conditions: os=linux & cpu=ia32
   languageName: node
   linkType: hard
@@ -668,13 +598,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/linux-loong64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-loong64@npm:0.18.20"
-  conditions: os=linux & cpu=loong64
-  languageName: node
-  linkType: hard
-
 "@esbuild/linux-loong64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/linux-loong64@npm:0.19.11"
@@ -685,13 +608,6 @@ __metadata:
 "@esbuild/linux-mips64el@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/linux-mips64el@npm:0.17.6"
-  conditions: os=linux & cpu=mips64el
-  languageName: node
-  linkType: hard
-
-"@esbuild/linux-mips64el@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-mips64el@npm:0.18.20"
   conditions: os=linux & cpu=mips64el
   languageName: node
   linkType: hard
@@ -710,13 +626,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/linux-ppc64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-ppc64@npm:0.18.20"
-  conditions: os=linux & cpu=ppc64
-  languageName: node
-  linkType: hard
-
 "@esbuild/linux-ppc64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/linux-ppc64@npm:0.19.11"
@@ -727,13 +636,6 @@ __metadata:
 "@esbuild/linux-riscv64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/linux-riscv64@npm:0.17.6"
-  conditions: os=linux & cpu=riscv64
-  languageName: node
-  linkType: hard
-
-"@esbuild/linux-riscv64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-riscv64@npm:0.18.20"
   conditions: os=linux & cpu=riscv64
   languageName: node
   linkType: hard
@@ -752,13 +654,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/linux-s390x@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-s390x@npm:0.18.20"
-  conditions: os=linux & cpu=s390x
-  languageName: node
-  linkType: hard
-
 "@esbuild/linux-s390x@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/linux-s390x@npm:0.19.11"
@@ -769,13 +664,6 @@ __metadata:
 "@esbuild/linux-x64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/linux-x64@npm:0.17.6"
-  conditions: os=linux & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@esbuild/linux-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/linux-x64@npm:0.18.20"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -794,13 +682,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/netbsd-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/netbsd-x64@npm:0.18.20"
-  conditions: os=netbsd & cpu=x64
-  languageName: node
-  linkType: hard
-
 "@esbuild/netbsd-x64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/netbsd-x64@npm:0.19.11"
@@ -811,13 +692,6 @@ __metadata:
 "@esbuild/openbsd-x64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/openbsd-x64@npm:0.17.6"
-  conditions: os=openbsd & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@esbuild/openbsd-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/openbsd-x64@npm:0.18.20"
   conditions: os=openbsd & cpu=x64
   languageName: node
   linkType: hard
@@ -836,13 +710,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/sunos-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/sunos-x64@npm:0.18.20"
-  conditions: os=sunos & cpu=x64
-  languageName: node
-  linkType: hard
-
 "@esbuild/sunos-x64@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/sunos-x64@npm:0.19.11"
@@ -853,13 +720,6 @@ __metadata:
 "@esbuild/win32-arm64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/win32-arm64@npm:0.17.6"
-  conditions: os=win32 & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@esbuild/win32-arm64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/win32-arm64@npm:0.18.20"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -878,13 +738,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild/win32-ia32@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/win32-ia32@npm:0.18.20"
-  conditions: os=win32 & cpu=ia32
-  languageName: node
-  linkType: hard
-
 "@esbuild/win32-ia32@npm:0.19.11":
   version: 0.19.11
   resolution: "@esbuild/win32-ia32@npm:0.19.11"
@@ -895,13 +748,6 @@ __metadata:
 "@esbuild/win32-x64@npm:0.17.6":
   version: 0.17.6
   resolution: "@esbuild/win32-x64@npm:0.17.6"
-  conditions: os=win32 & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@esbuild/win32-x64@npm:0.18.20":
-  version: 0.18.20
-  resolution: "@esbuild/win32-x64@npm:0.18.20"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1191,156 +1037,145 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solid-primitives/bounds@npm:^0.0.118":
-  version: 0.0.118
-  resolution: "@solid-primitives/bounds@npm:0.0.118"
+"@solid-primitives/bounds@npm:^0.0.119":
+  version: 0.0.119
+  resolution: "@solid-primitives/bounds@npm:0.0.119"
   dependencies:
-    "@solid-primitives/event-listener": "npm:^2.3.0"
-    "@solid-primitives/resize-observer": "npm:^2.0.22"
-    "@solid-primitives/static-store": "npm:^0.0.5"
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/event-listener": "npm:^2.3.1"
+    "@solid-primitives/resize-observer": "npm:^2.0.23"
+    "@solid-primitives/static-store": "npm:^0.0.6"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: a0d7e18987ba2ea6250c89a9a9006271b9d70584f208f72639bb2d373c16e739df83fd0f20576464cdef2980046b53851f4ea693ae7e62ebaa775035f8ff9c3f
+  checksum: 4c6f8766748d84b160352453aa07ac9afa9df18e7ecebdb058c1ec492777f9dff4fdf2c9e99991852a30ec99415f94f0a3f48ff7a77ca3070fdca8ef2714a3a0
   languageName: node
   linkType: hard
 
-"@solid-primitives/context@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "@solid-primitives/context@npm:0.2.1"
+"@solid-primitives/context@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@solid-primitives/context@npm:0.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: d8040abe34f968f686afd728cf50b49fbe8c34b151cee07fcda53b61d4a284a81e6ff4688966bcfac01aa09787edd65371de7c7bf3157e36ad971bccf5fb3e45
+  checksum: 1f070a1aa672993364e3750f170c39038a5c8a9a9ed5f8b6d57984357b6e2ebe905270eec4536dbbc6f45f012f05cd913f90fc3ec2e47d9048f57723d6b56912
   languageName: node
   linkType: hard
 
-"@solid-primitives/date@npm:^2.0.18":
-  version: 2.0.18
-  resolution: "@solid-primitives/date@npm:2.0.18"
+"@solid-primitives/date@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "@solid-primitives/date@npm:2.0.19"
   dependencies:
-    "@solid-primitives/memo": "npm:^1.3.5"
-    "@solid-primitives/timer": "npm:^1.3.7"
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/memo": "npm:^1.3.6"
+    "@solid-primitives/timer": "npm:^1.3.8"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 4c5e46d4b4d91b181c49db31cd25d16a52cdb96a6b3e7d7971f9e306ec61b674ff1d8b3c673cbab56bf397e396229bba2953a95bdba15706bc008765c0a16523
+  checksum: 8ceca258cd8b6fc5e35ce204f36c70f62e2f4863a077c3eef730d0596868839be1edb9191f4f92d934e82de99114d3f6bf24fa0719451bc18cbb6d415abd9b33
   languageName: node
   linkType: hard
 
-"@solid-primitives/event-listener@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@solid-primitives/event-listener@npm:2.3.0"
+"@solid-primitives/event-listener@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@solid-primitives/event-listener@npm:2.3.1"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: d6f67f1a302ab23800f0e10f37f85a3f7c4376c3b6b4ceba290ad5b7566247bc6c0b6de48944ab4e5c4c882647bd67e1e18d3aed93ebcd523f5a55e5a0c744ec
+  checksum: 411ce4b4512eb9468829ef1ec9f24537dc5c76facfc1b8365768366da9890858889735ac4ba8730fbd6a16a2e1abd464cc24e8a81a5599e633b1d092535790c6
   languageName: node
   linkType: hard
 
-"@solid-primitives/jsx-tokenizer@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "@solid-primitives/jsx-tokenizer@npm:1.0.7"
+"@solid-primitives/jsx-tokenizer@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "@solid-primitives/jsx-tokenizer@npm:1.0.8"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 54c2508edb0e99a4b677343379622736be22158fc9ef2d935b57fbd136dd6826308d47818d667e2f53fcac3fd2606cb44566c434f60dbe0cb133e11b99608b53
+  checksum: ee6290c992f0a74fabf0a015e547cccc5d13807e115aee350a66bc7f7d6bc8ba5dab53dcf3a1a02a947d13a036d9a946cff7fa6f90425fb2ea4badcbdbae9bdf
   languageName: node
   linkType: hard
 
-"@solid-primitives/map@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "@solid-primitives/map@npm:0.4.8"
+"@solid-primitives/map@npm:^0.4.9":
+  version: 0.4.9
+  resolution: "@solid-primitives/map@npm:0.4.9"
   dependencies:
-    "@solid-primitives/trigger": "npm:^1.0.8"
+    "@solid-primitives/trigger": "npm:^1.0.9"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 0b75cde1d30450fce949d9ba9aaf97de30f865f2e0e45a1bf3cfbc9ad745fdb39066278b29939498ad7d2dfb82a32a23a21d4520bd6bab18b3e5d3e459720a9d
+  checksum: a2f12a0ea1362187a9681b8d91858a2b5cbb6ce27cf6e7dd5547118e6a803d0183961483ed45254b5f6f0be3f80196247afa23a516a26bf480da4efc6bc2db9c
   languageName: node
   linkType: hard
 
-"@solid-primitives/memo@npm:^1.3.5":
-  version: 1.3.5
-  resolution: "@solid-primitives/memo@npm:1.3.5"
+"@solid-primitives/memo@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "@solid-primitives/memo@npm:1.3.6"
   dependencies:
-    "@solid-primitives/scheduled": "npm:^1.4.1"
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/scheduled": "npm:^1.4.2"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: a0aa3e338c350d4f35306d99f32640e205afee0d93930d037a8a0f50b9fba7955eebbc2bce581c21c59093810e2c9648f6ff1a815e291021295439ed0a47d4d6
+  checksum: d790df4361ebe6f8f3577b3cf97758e0e54637817e37f173d8b8ea8588a6cf9f83a82c85fb1eee3e99204e38b52e265e2b84df3e7c24bec123b45017f091cff8
   languageName: node
   linkType: hard
 
-"@solid-primitives/mouse@npm:^2.0.16":
-  version: 2.0.16
-  resolution: "@solid-primitives/mouse@npm:2.0.16"
+"@solid-primitives/mouse@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@solid-primitives/mouse@npm:2.0.17"
   dependencies:
-    "@solid-primitives/event-listener": "npm:^2.3.0"
-    "@solid-primitives/rootless": "npm:^1.4.2"
-    "@solid-primitives/static-store": "npm:^0.0.5"
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/event-listener": "npm:^2.3.1"
+    "@solid-primitives/rootless": "npm:^1.4.3"
+    "@solid-primitives/static-store": "npm:^0.0.6"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 65f1475548c4f04bfc56e22d3ebcdc155d141ce9a0ba3c97e3ebc4cc95ddb0b1703a2d5142b2073fc1a77c7d34572382f0fc9d5db5f7ca3e1fc9db4980c7b3eb
+  checksum: 5e2fbdb98e07ac0f62f97b81909cba5eeb5c643422e2ce584dbbef2571f7e61146302e516453c037faaa9dbb1368de40ba3e15f916e1bd00885a6847b06d1d12
   languageName: node
   linkType: hard
 
-"@solid-primitives/presence@npm:^0.0.3":
-  version: 0.0.3
-  resolution: "@solid-primitives/presence@npm:0.0.3"
+"@solid-primitives/presence@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@solid-primitives/presence@npm:0.0.4"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 51468bf80c6079d9141d56e752a90fb94110c6c608f365196fec10d57c0340a16658ac12cb1aa735f7c4e702ba8b81edbcfbc7dc440e5f0d61e22955625c4951
+  checksum: 393caba2a0c98c932b619827ed6143ca22dc5055345f96fb68790813214d68df663091c156d03121c9cda7edc8a8f44aedfc44fa526035ed40efbd46f8a8906e
   languageName: node
   linkType: hard
 
-"@solid-primitives/raf@npm:^2.1.13":
-  version: 2.1.13
-  resolution: "@solid-primitives/raf@npm:2.1.13"
+"@solid-primitives/raf@npm:^2.1.14":
+  version: 2.1.14
+  resolution: "@solid-primitives/raf@npm:2.1.14"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 20598afa797d17fae12f8c4fea432f0c96b0e3ed3a3388e2a3c6dbe4e414ece9e4ecacd6a41bb132f5810790ae374c595e160f59504955e637462fcdc81f37ce
+  checksum: a2377088d1898682dd34f6283ee17e8d052181086fb621c9ddd67b842ab1e524530b4b4a8facc3fa25b2672a662fe7abdd19f7366a74a32521f5b65f6b1777d9
   languageName: node
   linkType: hard
 
-"@solid-primitives/refs@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "@solid-primitives/refs@npm:1.0.5"
+"@solid-primitives/refs@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@solid-primitives/refs@npm:1.0.6"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 528f02f07116dd02639c9448d577157de6ff532b62203a5df2e2ede5607bd941ae13975e8dab9bd8cd15dd42410c56c1e3656b3ab227deb34395801645f6e403
+  checksum: 29ea03c47b8234979c3615709f403bc0838dd36123f58569618481f63dc39261c29c86e2bbfb485faa36bd8e32e7955a6a65ca9b49b62c32f1d8ce42eda2b607
   languageName: node
   linkType: hard
 
-"@solid-primitives/resize-observer@npm:^2.0.22":
-  version: 2.0.22
-  resolution: "@solid-primitives/resize-observer@npm:2.0.22"
+"@solid-primitives/resize-observer@npm:^2.0.23":
+  version: 2.0.23
+  resolution: "@solid-primitives/resize-observer@npm:2.0.23"
   dependencies:
-    "@solid-primitives/event-listener": "npm:^2.3.0"
-    "@solid-primitives/rootless": "npm:^1.4.2"
-    "@solid-primitives/static-store": "npm:^0.0.5"
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/event-listener": "npm:^2.3.1"
+    "@solid-primitives/rootless": "npm:^1.4.3"
+    "@solid-primitives/static-store": "npm:^0.0.6"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: aed3f9ef44a61427b467ff25d78eec11442790b11a3ddf4b2cf176212d1bf9701ebb88b44b32709dbdb11bbdcb4f35167c3901be8b4bbd8edd7b84def289591e
-  languageName: node
-  linkType: hard
-
-"@solid-primitives/rootless@npm:^1.4.2":
-  version: 1.4.2
-  resolution: "@solid-primitives/rootless@npm:1.4.2"
-  dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
-  peerDependencies:
-    solid-js: ^1.6.12
-  checksum: e68937ae74df02458a16bd47c9d903cc642b48e243dd865ef5042ecbf8602bdbd31affe4d30c1832a92c7bb09b492b660b080f90d47d57afdb541de9fe825538
+  checksum: 3d0cd6492db9b57a18176cc655725f5b71eb4a147f7b43091cca57920419203233ca93ba8d15b4853b55fb59b0e6307a7569e30ce098992c61cd3527461c0bf9
   languageName: node
   linkType: hard
 
@@ -1355,80 +1190,71 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solid-primitives/scheduled@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "@solid-primitives/scheduled@npm:1.4.1"
+"@solid-primitives/scheduled@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@solid-primitives/scheduled@npm:1.4.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 41a7f166a2f70e6d796c8af9b44ccf6eec1bbc01212fbcc4fa20183bdb32454539e2b5f54a65f6c74ed2626d16a832d4939c8733cee4261f0ead5d711d81a003
+  checksum: 553a05deea1fc641034f870598177716bc0b514137d3e35b06794301b49fe28800e961dc0ccc803ee8be39f1db9c36fbe998b9cc1019ce061682fae18ced3030
   languageName: node
   linkType: hard
 
-"@solid-primitives/scroll@npm:^2.0.20":
-  version: 2.0.20
-  resolution: "@solid-primitives/scroll@npm:2.0.20"
+"@solid-primitives/scroll@npm:^2.0.21":
+  version: 2.0.21
+  resolution: "@solid-primitives/scroll@npm:2.0.21"
   dependencies:
-    "@solid-primitives/event-listener": "npm:^2.3.0"
-    "@solid-primitives/rootless": "npm:^1.4.2"
-    "@solid-primitives/static-store": "npm:^0.0.5"
+    "@solid-primitives/event-listener": "npm:^2.3.1"
+    "@solid-primitives/rootless": "npm:^1.4.3"
+    "@solid-primitives/static-store": "npm:^0.0.6"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: c55b9dcdcabc323ae29806205bb9fe1497f4f9469bdfba2f1659182936be1c80cf4272042d567b786f697379df2e538e9234b6256488420061ea42652b57f0a0
+  checksum: f2b7af9a84942b7f43faa1f8dd3ab9fc0f935c6b2f3bf17cdd798be406f2ad071204295adf38c1d7b7d4b1e6cf7a6e288196cfc64a21f59b74b63baf7ececf33
   languageName: node
   linkType: hard
 
-"@solid-primitives/static-store@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "@solid-primitives/static-store@npm:0.0.5"
+"@solid-primitives/static-store@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "@solid-primitives/static-store@npm:0.0.6"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: e3803368146d47d8e981a628bd5c020ff3d0a7c7a27c7416c9d29e11b1213d58ba9ee6c235442823f2b14f901850ad9feaa19076a02df34519389bcb366d1bb4
+  checksum: f131ec8edf234ebdc8a05597b32ddf2dc4137d79ebb6ccbec0f0fa6955f8034c33cb6cc8c40850556e0db820981e17ce17d5b8212f358f188e33339c4ca78b67
   languageName: node
   linkType: hard
 
-"@solid-primitives/storage@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@solid-primitives/storage@npm:2.1.1"
+"@solid-primitives/storage@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@solid-primitives/storage@npm:2.1.2"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
     solid-start: ">=0.2.26"
   peerDependenciesMeta:
     solid-start:
       optional: true
-  checksum: 14f9cd739be028dd40267c2ae9da51e817b8d261624f2388e4d78b8fba3bebfa1cc30403976b6af33435b8330f30da3704ce2625003c457da1ae5036ea9bad07
+  checksum: eef32cdee309f9f7ec29d5fa2295663a6a4b286245502edad9b97cc198fc1bc1cdcf83076fefa525231623c493a9df39991acecf3205887d7e09028d2b0a5c89
   languageName: node
   linkType: hard
 
-"@solid-primitives/timer@npm:^1.3.7":
-  version: 1.3.7
-  resolution: "@solid-primitives/timer@npm:1.3.7"
+"@solid-primitives/timer@npm:^1.3.8":
+  version: 1.3.8
+  resolution: "@solid-primitives/timer@npm:1.3.8"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: 4ba87e2c0da8c56039058dfe013d1c23f33f2a7dce000755ce2033e329347ff80ff0ccc3cb960c87313ef4622348ece3934191668832fb7f3baa96bf015ca9fd
+  checksum: 3615edda8ca51e2790e3e4cbd6c99f9c8f20585c52041071e7eab8bc0a46f069ef2067ab4205cfd99e74a38c920fbb06e52838f63d30dd775030946ffdd8cc6b
   languageName: node
   linkType: hard
 
-"@solid-primitives/trigger@npm:^1.0.8":
-  version: 1.0.8
-  resolution: "@solid-primitives/trigger@npm:1.0.8"
+"@solid-primitives/trigger@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "@solid-primitives/trigger@npm:1.0.9"
   dependencies:
-    "@solid-primitives/utils": "npm:^6.2.1"
+    "@solid-primitives/utils": "npm:^6.2.2"
   peerDependencies:
     solid-js: ^1.6.12
-  checksum: f5605c0dd66925ddb339627f41927113acd9604a8c6366b56538c0d4859505b5050d23bc3a9fd153b5f3404611bcee7da9a13dd8eae4729357e246a79a5e50c0
-  languageName: node
-  linkType: hard
-
-"@solid-primitives/utils@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "@solid-primitives/utils@npm:6.2.1"
-  peerDependencies:
-    solid-js: ^1.6.12
-  checksum: 402116f9daaf020b6299d6e7b2c41bfda67c069a323d4fba76ea76b31ed1c3500769ae39430bb0e5732d3747e5e7f5c194718acf6f0c3e9bf237a4d6188b56e6
+  checksum: 16028f9bce3094f22d6a1d942d8214ad10e257b219af81c5a17e406ad086beb7a733e5ff5fed53153fbc84b2950e2a39f7f8a2d8398d57fc1124261331528d15
   languageName: node
   linkType: hard
 
@@ -1461,47 +1287,53 @@ __metadata:
   resolution: "@tab/extension@workspace:apps/extension"
   dependencies:
     "@material/material-color-utilities": "npm:^0.2.7"
-    "@solid-primitives/bounds": "npm:^0.0.118"
-    "@solid-primitives/context": "npm:^0.2.1"
-    "@solid-primitives/date": "npm:^2.0.18"
-    "@solid-primitives/map": "npm:^0.4.8"
-    "@solid-primitives/mouse": "npm:^2.0.16"
+    "@solid-primitives/bounds": "npm:^0.0.119"
+    "@solid-primitives/context": "npm:^0.2.2"
+    "@solid-primitives/date": "npm:^2.0.19"
+    "@solid-primitives/map": "npm:^0.4.9"
+    "@solid-primitives/mouse": "npm:^2.0.17"
     "@solid-primitives/rootless": "npm:^1.4.3"
-    "@solid-primitives/storage": "npm:^2.1.1"
-    "@solid-primitives/timer": "npm:^1.3.7"
-    "@tab/ui": "workspace:*"
-    "@types/chrome": "npm:^0.0.256"
+    "@solid-primitives/storage": "npm:^2.1.2"
+    "@solid-primitives/timer": "npm:^1.3.8"
+    "@tab/ui": "workspace:^"
+    "@types/chrome": "npm:^0.0.258"
     "@types/webextension-polyfill": "npm:^0.10.7"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
-    "@vanilla-extract/vite-plugin": "npm:^3.9.3"
+    "@vanilla-extract/vite-plugin": "npm:^3.9.4"
     idb: "npm:^8.0.0"
+    idb-keyval: "npm:^6.2.1"
+    material-symbols: "npm:^0.14.5"
     nanoid: "npm:^5.0.4"
-    solid-js: "npm:^1.8.8"
+    polished: "npm:^4.2.2"
+    solid-js: "npm:^1.8.11"
     typescript: "npm:^5.3.3"
-    vite: "npm:^5.0.11"
-    vite-plugin-solid: "npm:^2.8.0"
+    vite: "npm:^5.0.12"
+    vite-plugin-solid: "npm:^2.8.2"
     vite-plugin-web-extension: "npm:^4.1.1"
     webextension-polyfill: "npm:^0.10.0"
   languageName: unknown
   linkType: soft
 
-"@tab/ui@workspace:*, @tab/ui@workspace:packages/ui":
+"@tab/ui@workspace:^, @tab/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@tab/ui@workspace:packages/ui"
   dependencies:
-    "@solid-primitives/bounds": "npm:^0.0.118"
-    "@solid-primitives/context": "npm:^0.2.1"
-    "@solid-primitives/event-listener": "npm:^2.3.0"
-    "@solid-primitives/jsx-tokenizer": "npm:^1.0.7"
-    "@solid-primitives/map": "npm:^0.4.8"
-    "@solid-primitives/mouse": "npm:^2.0.16"
-    "@solid-primitives/presence": "npm:^0.0.3"
-    "@solid-primitives/raf": "npm:^2.1.13"
-    "@solid-primitives/refs": "npm:^1.0.5"
-    "@solid-primitives/timer": "npm:^1.3.7"
-    "@solid-primitives/utils": "npm:^6.2.1"
-    solid-js: "npm:^1.8.8"
+    "@solid-primitives/bounds": "npm:^0.0.119"
+    "@solid-primitives/context": "npm:^0.2.2"
+    "@solid-primitives/date": "npm:^2.0.19"
+    "@solid-primitives/event-listener": "npm:^2.3.1"
+    "@solid-primitives/jsx-tokenizer": "npm:^1.0.8"
+    "@solid-primitives/map": "npm:^0.4.9"
+    "@solid-primitives/mouse": "npm:^2.0.17"
+    "@solid-primitives/presence": "npm:^0.0.4"
+    "@solid-primitives/raf": "npm:^2.1.14"
+    "@solid-primitives/refs": "npm:^1.0.6"
+    "@solid-primitives/timer": "npm:^1.3.8"
+    "@solid-primitives/utils": "npm:^6.2.2"
+    "@vanilla-extract/css": "npm:^1.14.0"
+    polished: "npm:^4.2.2"
+    solid-js: "npm:^1.8.11"
   languageName: unknown
   linkType: soft
 
@@ -1510,17 +1342,17 @@ __metadata:
   resolution: "@tab/website@workspace:apps/website"
   dependencies:
     "@mdx-js/rollup": "npm:^3.0.0"
-    "@solid-primitives/mouse": "npm:^2.0.16"
-    "@solid-primitives/scroll": "npm:^2.0.20"
-    "@tab/ui": "workspace:*"
+    "@solid-primitives/mouse": "npm:^2.0.17"
+    "@solid-primitives/scroll": "npm:^2.0.21"
+    "@tab/ui": "workspace:^"
     "@vanilla-extract/css": "npm:^1.14.0"
-    "@vanilla-extract/vite-plugin": "npm:^3.9.3"
+    "@vanilla-extract/vite-plugin": "npm:^3.9.4"
     remark-gfm: "npm:^4.0.0"
-    solid-js: "npm:^1.8.7"
+    solid-js: "npm:^1.8.11"
     solid-jsx: "npm:^1.1.4"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^5.0.8"
-    vite-plugin-solid: "npm:^2.8.0"
+    typescript: "npm:^5.3.3"
+    vite: "npm:^5.0.12"
+    vite-plugin-solid: "npm:^2.8.2"
   languageName: unknown
   linkType: soft
 
@@ -1574,13 +1406,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chrome@npm:^0.0.256":
-  version: 0.0.256
-  resolution: "@types/chrome@npm:0.0.256"
+"@types/chrome@npm:^0.0.258":
+  version: 0.0.258
+  resolution: "@types/chrome@npm:0.0.258"
   dependencies:
     "@types/filesystem": "npm:*"
     "@types/har-format": "npm:*"
-  checksum: 35b3d2c92a3888cc14e5961421233003407a95078bf9b2f30c52a90470dae02588560bff1733ed3e7a8e9f12a1d0c5a6bae0ca30b6acdb3d723e1c2f29c8e861
+  checksum: 166d9b5feed9ff991aa186e04b53c9bdf7c885975953ebf4540f2db23dc33507a38d071e8d5c017c7c6eabcd2a52b48699c4f2c3c56fd42687330f0d6e7daa2a
   languageName: node
   linkType: hard
 
@@ -1715,12 +1547,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/babel-plugin-debug-ids@npm:^1.0.2":
-  version: 1.0.3
-  resolution: "@vanilla-extract/babel-plugin-debug-ids@npm:1.0.3"
+"@vanilla-extract/babel-plugin-debug-ids@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@vanilla-extract/babel-plugin-debug-ids@npm:1.0.4"
   dependencies:
     "@babel/core": "npm:^7.20.7"
-  checksum: 4ded3f594e18b9a80f124dd15e918cfba86c37ad3658af35901b79f9bc46dab85026534ff2214f5f80837b7d4385306aca3163211e63a9ca785ed627e1feac3f
+  checksum: 5cd86e100d2f1238ed438c607589feeafe72e56af62a2491414c26f673bd857d8c7cef26466932c2f6ba1d8ede237a042951cd7e51150f8706a6caf184861b79
   languageName: node
   linkType: hard
 
@@ -1743,13 +1575,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^6.2.4":
-  version: 6.2.4
-  resolution: "@vanilla-extract/integration@npm:6.2.4"
+"@vanilla-extract/integration@npm:^6.2.5":
+  version: 6.2.5
+  resolution: "@vanilla-extract/integration@npm:6.2.5"
   dependencies:
     "@babel/core": "npm:^7.20.7"
     "@babel/plugin-syntax-typescript": "npm:^7.20.0"
-    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.2"
+    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.4"
     "@vanilla-extract/css": "npm:^1.14.0"
     esbuild: "npm:0.17.6"
     eval: "npm:0.1.8"
@@ -1758,9 +1590,9 @@ __metadata:
     lodash: "npm:^4.17.21"
     mlly: "npm:^1.1.0"
     outdent: "npm:^0.8.0"
-    vite: "npm:^4.1.4"
-    vite-node: "npm:^0.28.5"
-  checksum: 19cf40f8b721ee731fdcaff5cededde821b554ea44b4f57167d77769f7b381d7a71a3beba63c1daed02695b95b391ebedca47887138d8c760f4151570b1ef634
+    vite: "npm:^5.0.10"
+    vite-node: "npm:^1.1.0"
+  checksum: 83112ab00bd20cd3ce6799a874c8b8426ed6bd80c49d7a4b2a3fdb0da9fc46fe9d3c83a5cbc511bb59d857193cd0027b619856b1b5a63c810a83b1bf739342c9
   languageName: node
   linkType: hard
 
@@ -1780,17 +1612,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/vite-plugin@npm:^3.9.3":
-  version: 3.9.3
-  resolution: "@vanilla-extract/vite-plugin@npm:3.9.3"
+"@vanilla-extract/vite-plugin@npm:^3.9.4":
+  version: 3.9.4
+  resolution: "@vanilla-extract/vite-plugin@npm:3.9.4"
   dependencies:
-    "@vanilla-extract/integration": "npm:^6.2.4"
+    "@vanilla-extract/integration": "npm:^6.2.5"
     outdent: "npm:^0.8.0"
     postcss: "npm:^8.3.6"
     postcss-load-config: "npm:^4.0.1"
   peerDependencies:
     vite: ^2.2.3 || ^3.0.0 || ^4.0.3 || ^5.0.0
-  checksum: 1a80ba8015bc0b646eb335caa90765c4becb6e6ffc9e95061c920ee15136a9f7b8a8819ed9a519deab368decc63ed8c9172264204b5a9ebed4f554128014e029
+  checksum: bb1eeea77d5ac8f934c6b6f605e10e2e586b85529b875644f50f80e48308cf7dd8bee878aad9bc7f716005e517e14efdea5cb8425c042a603e5f31c90526af71
   languageName: node
   linkType: hard
 
@@ -2750,83 +2582,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.18.10":
-  version: 0.18.20
-  resolution: "esbuild@npm:0.18.20"
-  dependencies:
-    "@esbuild/android-arm": "npm:0.18.20"
-    "@esbuild/android-arm64": "npm:0.18.20"
-    "@esbuild/android-x64": "npm:0.18.20"
-    "@esbuild/darwin-arm64": "npm:0.18.20"
-    "@esbuild/darwin-x64": "npm:0.18.20"
-    "@esbuild/freebsd-arm64": "npm:0.18.20"
-    "@esbuild/freebsd-x64": "npm:0.18.20"
-    "@esbuild/linux-arm": "npm:0.18.20"
-    "@esbuild/linux-arm64": "npm:0.18.20"
-    "@esbuild/linux-ia32": "npm:0.18.20"
-    "@esbuild/linux-loong64": "npm:0.18.20"
-    "@esbuild/linux-mips64el": "npm:0.18.20"
-    "@esbuild/linux-ppc64": "npm:0.18.20"
-    "@esbuild/linux-riscv64": "npm:0.18.20"
-    "@esbuild/linux-s390x": "npm:0.18.20"
-    "@esbuild/linux-x64": "npm:0.18.20"
-    "@esbuild/netbsd-x64": "npm:0.18.20"
-    "@esbuild/openbsd-x64": "npm:0.18.20"
-    "@esbuild/sunos-x64": "npm:0.18.20"
-    "@esbuild/win32-arm64": "npm:0.18.20"
-    "@esbuild/win32-ia32": "npm:0.18.20"
-    "@esbuild/win32-x64": "npm:0.18.20"
-  dependenciesMeta:
-    "@esbuild/android-arm":
-      optional: true
-    "@esbuild/android-arm64":
-      optional: true
-    "@esbuild/android-x64":
-      optional: true
-    "@esbuild/darwin-arm64":
-      optional: true
-    "@esbuild/darwin-x64":
-      optional: true
-    "@esbuild/freebsd-arm64":
-      optional: true
-    "@esbuild/freebsd-x64":
-      optional: true
-    "@esbuild/linux-arm":
-      optional: true
-    "@esbuild/linux-arm64":
-      optional: true
-    "@esbuild/linux-ia32":
-      optional: true
-    "@esbuild/linux-loong64":
-      optional: true
-    "@esbuild/linux-mips64el":
-      optional: true
-    "@esbuild/linux-ppc64":
-      optional: true
-    "@esbuild/linux-riscv64":
-      optional: true
-    "@esbuild/linux-s390x":
-      optional: true
-    "@esbuild/linux-x64":
-      optional: true
-    "@esbuild/netbsd-x64":
-      optional: true
-    "@esbuild/openbsd-x64":
-      optional: true
-    "@esbuild/sunos-x64":
-      optional: true
-    "@esbuild/win32-arm64":
-      optional: true
-    "@esbuild/win32-ia32":
-      optional: true
-    "@esbuild/win32-x64":
-      optional: true
-  bin:
-    esbuild: bin/esbuild
-  checksum: 473b1d92842f50a303cf948a11ebd5f69581cd254d599dd9d62f9989858e0533f64e83b723b5e1398a5b488c0f5fd088795b4235f65ecaf4f007d4b79f04bc88
-  languageName: node
-  linkType: hard
-
 "esbuild@npm:^0.19.3":
   version: 0.19.11
   resolution: "esbuild@npm:0.19.11"
@@ -3449,6 +3204,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"idb-keyval@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "idb-keyval@npm:6.2.1"
+  checksum: 9f0c83703a365e00bd0b4ed6380ce509a06dedfc6ec39b2ba5740085069fd2f2ff5c14ba19356488e3612a2f9c49985971982d836460a982a5d0b4019eeba48a
+  languageName: node
+  linkType: hard
+
 "idb@npm:^8.0.0":
   version: 8.0.0
   resolution: "idb@npm:8.0.0"
@@ -4011,6 +3773,13 @@ __metadata:
   version: 1.2.5
   resolution: "marky@npm:1.2.5"
   checksum: ca8a011f287dab1ac3291df720fc32b366c4cd767347b63722966650405ce71ec6566f71d1e22e1768bf6461a7fd689b9038e7df0fcfb62eacf3a5a6dcac249e
+  languageName: node
+  linkType: hard
+
+"material-symbols@npm:^0.14.5":
+  version: 0.14.5
+  resolution: "material-symbols@npm:0.14.5"
+  checksum: 44dc328272a09fbf1d10ca76b13a7ceca1c5c253765b62b2cd52baf56e3584cc19475fecc5727358e2e25f5df1b695a49ed7aa2b0117a7173db5707b882d9450
   languageName: node
   linkType: hard
 
@@ -5223,6 +4992,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"polished@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "polished@npm:4.2.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.17.8"
+  checksum: 1d054d1fea18ac7d921ca91504ffcf1ef0f505eda6acbfec6e205a98ebfea80b658664995deb35907dabc5f75f287dc2894812503a8aed28285bb91f25cf7400
+  languageName: node
+  linkType: hard
+
 "postcss-load-config@npm:^4.0.1":
   version: 4.0.2
   resolution: "postcss-load-config@npm:4.0.2"
@@ -5241,7 +5019,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.6, postcss@npm:^8.4.27, postcss@npm:^8.4.32":
+"postcss@npm:^8.3.6, postcss@npm:^8.4.32":
   version: 8.4.33
   resolution: "postcss@npm:8.4.33"
   dependencies:
@@ -5495,20 +5273,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.27.1":
-  version: 3.29.4
-  resolution: "rollup@npm:3.29.4"
-  dependencies:
-    fsevents: "npm:~2.3.2"
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  bin:
-    rollup: dist/bin/rollup
-  checksum: 65eddf84bf389ea8e4d4c1614b1c6a298d08f8ae785c0c087e723a879190c8aaddbab4aa3b8a0524551b9036750c9f8bfea27b377798accfd2ba5084ceff5aaa
-  languageName: node
-  linkType: hard
-
 "rollup@npm:^4.2.0":
   version: 4.9.4
   resolution: "rollup@npm:4.9.4"
@@ -5620,10 +5384,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"seroval@npm:^1.0.2":
-  version: 1.0.3
-  resolution: "seroval@npm:1.0.3"
-  checksum: 157cc7828747a3c8f2bf3cf786c25c14ecf451a86f82c49e9d755e8076cc5172087536fb7a574322ad2e56b9dd818e7ebfb453efb8f81ba54aa8a9d66a4f9ab0
+"seroval-plugins@npm:^1.0.3":
+  version: 1.0.4
+  resolution: "seroval-plugins@npm:1.0.4"
+  peerDependencies:
+    seroval: ^1.0
+  checksum: b0606dd5eb4a40eff50a08566561ee97867daf1892952e4f5bbebacb244106f4ecce1e70c1bb083a54a3b1c434d6f290005b75184d151dc9ecd08e4fbc68f746
+  languageName: node
+  linkType: hard
+
+"seroval@npm:^1.0.3":
+  version: 1.0.4
+  resolution: "seroval@npm:1.0.4"
+  checksum: 3cbf19e64ec794d9a36a4fa2517df428729791d8258b8416cdeea062221fb46198b982d07ccda3e090800168e873eb63a4452b134597f72a1c115ad84a5d2b43
   languageName: node
   linkType: hard
 
@@ -5706,13 +5479,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solid-js@npm:^1.8.7, solid-js@npm:^1.8.8":
-  version: 1.8.8
-  resolution: "solid-js@npm:1.8.8"
+"solid-js@npm:^1.8.11":
+  version: 1.8.11
+  resolution: "solid-js@npm:1.8.11"
   dependencies:
     csstype: "npm:^3.1.0"
-    seroval: "npm:^1.0.2"
-  checksum: 2b7f9ec0d9aeefcb29af9c24a453a6892f50d623b732c54a9bc0e0a89a0e22a38901ff9ebdb39b26ed7c5de4c3d54499a96e884ff49be03833f793cfb425afef
+    seroval: "npm:^1.0.3"
+    seroval-plugins: "npm:^1.0.3"
+  checksum: c19b54e9aaa1488fa34fbbd216a66cbf0cba46e5c21165d89a825dae6de843a0dd2ed474ce115862c297345e289327a375ec80e1ad8ae81042cf11674e6f1c8a
   languageName: node
   linkType: hard
 
@@ -5725,16 +5499,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solid-refresh@npm:^0.5.3":
-  version: 0.5.3
-  resolution: "solid-refresh@npm:0.5.3"
+"solid-refresh@npm:^0.6.3":
+  version: 0.6.3
+  resolution: "solid-refresh@npm:0.6.3"
   dependencies:
-    "@babel/generator": "npm:^7.21.1"
-    "@babel/helper-module-imports": "npm:^7.18.6"
-    "@babel/types": "npm:^7.21.2"
+    "@babel/generator": "npm:^7.23.6"
+    "@babel/helper-module-imports": "npm:^7.22.15"
+    "@babel/types": "npm:^7.23.6"
   peerDependencies:
     solid-js: ^1.3
-  checksum: a4115284f9959d0f811036b4d5735805c6b74cf7e31da4f4fefb8123da2b9bf82a10f64f929ae839ebfd77b5f6183652358be8b6b0298ed2001323410d0a34ba
+  checksum: 04f474704fe60e28835ece852bb6a5ce60106d1d360c2d9ed0f5740751b60672705591b5ae57a35202fd6c13c8cf4eb0e17897e954317e204c2e2bda46b8bb17
   languageName: node
   linkType: hard
 
@@ -5745,7 +5519,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:0.5.21, source-map-support@npm:^0.5.21":
+"source-map-support@npm:0.5.21":
   version: 0.5.21
   resolution: "source-map-support@npm:0.5.21"
   dependencies:
@@ -5755,7 +5529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.6.0, source-map@npm:^0.6.1":
+"source-map@npm:^0.6.0":
   version: 0.6.1
   resolution: "source-map@npm:0.6.1"
   checksum: ab55398007c5e5532957cb0beee2368529618ac0ab372d789806f5718123cc4367d57de3904b4e6a4170eb5a0b0f41373066d02ca0735a0c4d75c7d328d3e011
@@ -6105,7 +5879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.2.2, typescript@npm:^5.3.3":
+"typescript@npm:^5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
@@ -6115,7 +5889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>":
   version: 5.3.3
   resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:
@@ -6358,39 +6132,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-node@npm:^0.28.5":
-  version: 0.28.5
-  resolution: "vite-node@npm:0.28.5"
+"vite-node@npm:^1.1.0":
+  version: 1.2.1
+  resolution: "vite-node@npm:1.2.1"
   dependencies:
     cac: "npm:^6.7.14"
     debug: "npm:^4.3.4"
-    mlly: "npm:^1.1.0"
-    pathe: "npm:^1.1.0"
+    pathe: "npm:^1.1.1"
     picocolors: "npm:^1.0.0"
-    source-map: "npm:^0.6.1"
-    source-map-support: "npm:^0.5.21"
-    vite: "npm:^3.0.0 || ^4.0.0"
+    vite: "npm:^5.0.0"
   bin:
     vite-node: vite-node.mjs
-  checksum: 2aae3faf3acae592922b5527564045ad648c649dd741afd66b0a175f64be6a8654ea44192f31b178c1cefd2869ab4240f91791893686dc85cf7a09ebf6d808a9
+  checksum: 5c2393129299ecbbd0716ffc1de46479f4a7afa0d043d31e3175e69ceaaf0c363c637513fe5fa1e5e1c61ab8c55d82c7004f71a846ee8ded4d434a3370b4253f
   languageName: node
   linkType: hard
 
-"vite-plugin-solid@npm:^2.8.0":
-  version: 2.8.0
-  resolution: "vite-plugin-solid@npm:2.8.0"
+"vite-plugin-solid@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "vite-plugin-solid@npm:2.8.2"
   dependencies:
     "@babel/core": "npm:^7.23.3"
     "@babel/preset-typescript": "npm:^7.23.3"
     "@types/babel__core": "npm:^7.20.4"
     babel-preset-solid: "npm:^1.8.4"
     merge-anything: "npm:^5.1.7"
-    solid-refresh: "npm:^0.5.3"
+    solid-refresh: "npm:^0.6.3"
     vitefu: "npm:^0.2.5"
   peerDependencies:
     solid-js: ^1.7.2
     vite: ^3.0.0 || ^4.0.0 || ^5.0.0
-  checksum: aaa5af387e75ad3d7aa79b1a9e9fc3b68843adbc6fa7def74ebb16d0535084d325bc738927e31eb57e184af21b7c1f8febcf8516b61e7433d098528d090a50f9
+  checksum: 2c6ec50d9d69075aa8e0d09e80c5f5c9512faa0e3cc69b96ce1ac5a7939743d24cd7c3fdac98e9b0c8f1c8d08a80719fc126210536373c148d6e41f9e6082f5c
   languageName: node
   linkType: hard
 
@@ -6414,47 +6185,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.0.0 || ^4.0.0, vite@npm:^4.1.4":
-  version: 4.5.1
-  resolution: "vite@npm:4.5.1"
-  dependencies:
-    esbuild: "npm:^0.18.10"
-    fsevents: "npm:~2.3.2"
-    postcss: "npm:^8.4.27"
-    rollup: "npm:^3.27.1"
-  peerDependencies:
-    "@types/node": ">= 14"
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.4.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 352a94b13f793e4bcbc424d680a32507343223eeda8917fde0f23c1fa1ba3db7c806dade8461ca5cfb270154ddb8895a219fdd4384519fe9b8e46d1cf491a890
-  languageName: node
-  linkType: hard
-
-"vite@npm:^5.0.0 || ^4.1.4, vite@npm:^5.0.11, vite@npm:^5.0.8":
+"vite@npm:^5.0.0 || ^4.1.4":
   version: 5.0.11
   resolution: "vite@npm:5.0.11"
   dependencies:
@@ -6491,6 +6222,46 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 74a3ddc6d43cf19cb6f827a53d77c481a07517a72b7d82a178df082012ad81ab5231a287a6dcc5471c0b2a5c8dd7e6ea8e1d62d268803057d0315729f09c5e33
+  languageName: node
+  linkType: hard
+
+"vite@npm:^5.0.0, vite@npm:^5.0.10, vite@npm:^5.0.12":
+  version: 5.0.12
+  resolution: "vite@npm:5.0.12"
+  dependencies:
+    esbuild: "npm:^0.19.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.32"
+    rollup: "npm:^4.2.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: c51b8e458851943c903fddde6973e720099ef8a5f364fb107cddade59c9e90f6d9ad98b61a7419cdfa0c6374236e10bff965d0c2d9e7b1790c68b874e5e7950c
   languageName: node
   linkType: hard
 

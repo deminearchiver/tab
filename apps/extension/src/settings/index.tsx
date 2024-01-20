@@ -3,7 +3,7 @@ import { ParentComponent, ParentProps, createContext, useContext } from "solid-j
 import { SetStoreFunction, createStore } from "solid-js/store";
 import { darkTheme, lightTheme } from "../theme.css";
 import { QuantizerCelebi } from "@material/material-color-utilities";
-
+import { darkTheme as dark, textThemeClass } from "@tab/ui/theme";
 export enum ThemeMode {
   Light,
   Dark,
@@ -32,6 +32,7 @@ export const Settings: ParentComponent<SettingsProps> = (props) => {
       setSettings,
     }}>
       <div
+        class={textThemeClass}
         classList={{
           [lightTheme]: settings.mode === ThemeMode.Light,
           [darkTheme]: settings.mode === ThemeMode.Dark,
